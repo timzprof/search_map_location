@@ -1,5 +1,3 @@
-
-
 import 'latlng.dart';
 
 class Geolocation {

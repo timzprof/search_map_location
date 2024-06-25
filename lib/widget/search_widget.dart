@@ -208,15 +208,11 @@ class _SearchLocationState extends State<SearchLocation> with TickerProviderStat
     }
 
     if (widget.placeType != null) {
-
       url += "&types=${widget.placeType!.apiString}";
-
     }
 
     if(widget.country != null){
-
       url += "&components=country:${widget.country}";
-
     }
 
     final response = await http.get(Uri.parse(url));
